@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="first"></div>
+    <div id="second"></div>
+  </div>
+</body>
+<script>
+  let root = document.getElementById('root');
+  let first = document.getElementById('first');
+  let second = document.getElementById('second');
+
+  let style = ["width","height","border"];
+  
+  for(let i=0;i<style.length;i++){
+    root.style.style[i] = 10+"px";
+  }
+  
+
+  console.dir(root);
+</script>
+</html>
